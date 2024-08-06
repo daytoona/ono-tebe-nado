@@ -71,7 +71,6 @@
     font-style: normal;
     font-weight: bold;
     font-size: 100px;
-    z-index: 1;
 }
 .aligned-text {
     display: block;
@@ -120,7 +119,6 @@
     display: flex;
     justify-content: space-between;
     font-family: Raleway, sans-serif;
-    position: relative;
     bottom: 156px;
     align-items: center;
 }
