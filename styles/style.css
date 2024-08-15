@@ -1,4 +1,3 @@
-
 .header {
     display: grid;
     grid-template-columns: 1fr min-content 1fr;
@@ -30,6 +29,9 @@
     list-style-type: none;
 }
 .header-info {
+    margin-right: 65px;
+}
+.info {
     display: flex;
     align-items: flex-start;
     flex-direction: column;
@@ -37,7 +39,9 @@
     font-style: normal;
     font-weight: 400;
     font-size: 18px;
-    margin-right: 65px;
+    font-family: Raleway,sans-serif;
+    opacity: 0px;
+    line-height: 24.3px;
 }
 .header-info-link {
     text-decoration: underline;
@@ -53,11 +57,8 @@
     text-align: left;
 }
 .cover {
-    background: rgba(0, 0, 0, 1);
-    background-image: linear-gradient(rgba(0, 0, 0,0.6), rgba(0, 0, 0,0.6)), url('../images/cover.jpg');
-    /* не получается через оверлэй */
+    background-image: linear-gradient(rgba(0, 0, 0,0.6), rgba(0, 0, 0,0.6)),url('../images/cover.jpg');
     min-height: 757px;
-    height: 757px;
     display: flex;
     position: relative;
     background-size: cover;
@@ -65,6 +66,7 @@
     flex-direction: column;
     justify-content: space-between;
 }   
+/* не совсем понимаю как его переипользовать*/
 .cover-title {
     position: relative;
     z-index: 1;
@@ -125,17 +127,18 @@
     border: 1px solid rgba(255, 255, 255, 1);
     background-color:rgba(0,0,0,0);
     color: white;
-    font-weight: 500;
+    font-family: Raleway,sans-serif;
     font-size: 22px;
+    font-weight: 500;
+    line-height: 25.83px;
+    text-align: center;
 }   
 .lots {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
     width: 1052px;
-    height: 692px;
-    top: 1229px;
-    left: 24px;
+    min-height: 692px;
     gap: 25px;
     opacity: 0px;
     margin-top: 179px;
@@ -143,59 +146,60 @@
 }
 .card-type-film {
     background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../images/card-lot-01.jpg');
-    padding-top: 30px;
 }
 .card-title {
     display: block;
     font-family: Raleway, sans-serif;
+    text-align: left;
+    text-transform: uppercase;
+    color: #FFFFFF;
     font-size: 22px;
     font-weight: 700;
     line-height: 26.4px;
-    text-align: left;
-    color: #FFFFFF;
     width: 254px;
-    height: 82px;
+    height: auto;
+    max-height: none;
     gap: 0px;
     opacity: 0px;
     margin-left: 40px;
     margin-top: 238px;
     margin-top: 17px;
-    text-transform: uppercase;
 }
 .card-text {
-    display: block;
+    display: inline-block;
     font-family: Raleway,sans-serif;
-    text-decoration: underline;
-    z-index: 1;
+    text-decoration: none;
     font-size: 20px;
     font-weight: 400;
     line-height: 24px;
     text-align: left;
     color: white;
     width: 254px;
-    height: 144px;
-    gap: 0px;
-    opacity: 0px;
-    margin-top: 48px;
+    height: auto;
+    max-height: none;;
     margin-left: 40px;
     margin-right: 40px;
 }
+.text {
+    padding-top: 245px;
+}
+.text-picture {
+    padding-top: 100px;
+}
 .lots-heading {
+    text-align: left;
     width: 100%;
     margin-left: 42px;
     font-family: Raleway,sans-serif;
     font-size: 40px;
     font-weight: 700;
     line-height: 46.96px;
-    text-align: left;
 }
 .card-type-book {
     background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../images/card-lot-02.jpg');
-    padding-top: 30px;
 }
 .card-type-picture {
     background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../images/card-lot-03.jpg');
-    padding-top: 30px;
 }
 .card {
     background-size: cover;
@@ -203,6 +207,7 @@
     background-repeat: no-repeat;
     width: 334px;
     min-height: 563px;
+    padding-top: 30px;
 }
 .loots-look-more-link {
     font-family: Raleway,sans-serif;
@@ -214,17 +219,7 @@
     margin-top: 8px;
 }
 .lots-card-link {
-    text-decoration: underline;
     color: white;
-}
-.text {
-    margin-top: 238px;
-}
-.text-book {
-    margin-top: 25px;
-}
-.text-picture {
-    margin-top: 120px;
 }
 .about {
     width: 1052px;
@@ -290,10 +285,9 @@
 .footer-menu-roster {
     list-style-type: none;
     text-align: center;
-    margin-right: 40px;
     margin-top: 3px;
     width: 149px;
-    height: 64px;
+    min-height: 64px;
     gap: 0px;
     border: 1px 0px 0px 0px;
     opacity: 0px;
@@ -302,24 +296,6 @@
     font-weight: 400;
     line-height: 21.13px;
     margin-left: 40px;
-}
-.footer-info {
-    display: flex;
-    align-items: flex-start;
-    flex-direction: column;
-    text-align: left;
-    font-style: normal;
-    width: 240.52px;
-    height: 98px;
-    left: 50px;
-    gap: 0px;
-    border: 1px 0px 0px 0px;
-    opacity: 0px;
-    font-family: Raleway,sans-serif;
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 24.3px;
-    letter-spacing: 0.01em;
 }
 .footer-social-list {
     display: flex;
