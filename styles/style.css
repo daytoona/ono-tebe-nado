@@ -16,7 +16,6 @@
     display: flex;
     gap: 30px;
     list-style-type: circle;
-    top: 2px;
     font-weight: 400;
     font-size: 18px;
     margin-right: 48px;
@@ -40,7 +39,6 @@
     font-weight: 400;
     font-size: 18px;
     font-family: Raleway,sans-serif;
-    opacity: 0px;
     line-height: 24.3px;
 }
 .header-info-link {
@@ -66,7 +64,7 @@
     flex-direction: column;
     justify-content: space-between;
 }   
-/* не совсем понимаю как его переипользовать*/
+/* не получается через оверлей*/
 .cover-title {
     position: relative;
     z-index: 1;
@@ -138,9 +136,7 @@
     flex-wrap: wrap;
     justify-content: space-evenly;
     width: 1052px;
-    min-height: 692px;
     gap: 25px;
-    opacity: 0px;
     margin-top: 179px;
     margin-left: 24px;
 }
@@ -160,7 +156,6 @@
     height: auto;
     max-height: none;
     gap: 0px;
-    opacity: 0px;
     margin-left: 40px;
     margin-top: 17px;
 }
@@ -261,7 +256,6 @@
     grid-row: 2 / 3;
     width: 693px;
     gap: 0px;
-    opacity: 0px;
     font-family: Raleway,sans-serif;
     font-size: 20px;
     font-weight: 400;
@@ -277,8 +271,7 @@
     width: 100%;
     height: 100%;
     gap: 0px;
-    border: 1px 0px 0px 0px;
-    opacity: 0px;
+    border: 1px 0px;
     padding: 180px 50px 88px 50px;
 }
 .footer-menu-roster {
@@ -286,10 +279,8 @@
     text-align: center;
     margin-top: 3px;
     width: 149px;
-    min-height: 64px;
     gap: 0px;
-    border: 1px 0px 0px 0px;
-    opacity: 0px;
+    border: 1px 0px;
     font-family: Raleway,sans-serif;
     font-size: 18px;
     font-weight: 400;
@@ -305,8 +296,7 @@
 .footer-social-icon {
     width: 48px;
     height: 48px;
-    border: 1px 0px 0px 0px;
-    opacity: 0px;
+    border: 1px 0px;
 }
 .footer-social-list-item {
     display: flex;
