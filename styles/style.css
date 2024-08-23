@@ -40,6 +40,7 @@
     font-size: 18px;
     font-family: Raleway,sans-serif;
     line-height: 24.3px;
+    list-style-type: none;
 }
 .header-info-link {
     text-decoration: underline;
